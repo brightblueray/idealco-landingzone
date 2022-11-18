@@ -3,7 +3,7 @@ terraform {
     organization = "brightblueray"
 
     workspaces {
-      name = "idealco-landingzone-prod"
+      name = "idealco-landingzone-dev"
     }
   }
 }
@@ -14,7 +14,7 @@ provider "azurerm" {
 
 module "idealco_rg" {
   source  = "app.terraform.io/brightblueray/idealco_rg/azure"
-  version = "1.0.2"
+  version = "2.0.1"
 }
 
 output "rg-name" {
